@@ -1,0 +1,11 @@
+module bg(a,b,y1,y2,y3,y4,y5,y6,y7);
+     input a,b;
+     output y1,y2,y3,y4,y5,y6,y7;
+  or o1(y1,a,b);
+  and a1(y2,a,b);
+  xor x1(y3,a,b);
+  not n1(y4,a);
+  nor n2(y5,y1);
+  nand n3(y6,y2);
+  xnor n4(y7,y3);
+endmodule
